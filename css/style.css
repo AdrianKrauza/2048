@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #faf8ef;
+}
+
+#box {
+    width: calc((15px + 100px) * 4 + 15px);
+    height: calc((15px + 100px) * 4 + 15px);
+    background: #BBADA0;
+    margin: auto;
+    margin-top: 35px;
+    display: block;
+    border-radius: 10px;
+    padding: 7.5px;
+}
+
+#box div {
+    width: 100px;
+    height: 100px;
+    /* color: white; */
+    margin: 7.5px;
+    float: left;
+    font-size: 60px;
+    padding-top: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+#title {
+    color: #776E65;
+    font-size: 90px;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+#score p,
+#bestScore p {
+    font-size: 16px;
+    color: #eee4da;
+    padding-top: 5px;
+}
+
+#score,
+#bestScore {
+    border-radius: 4px;
+    font-size: 27px;
+    color: white;
+    background: #BBADA0;
+    width: 95px;
+    height: 60px;
+    margin: 10px;
+    text-align: center;
+    word-spacing: 20px;
+
+
+}
+
+#head #text {
+    color: #776e65;
+    margin-top: 20px;
+    font-size: 17px;
+}
+#head button:active {
+transform: scale(.99);
+transition: transform .1s;
+}
+#gameOver{
+    position: absolute;
+    background:red;
+    width: calc((15px + 100px) * 4 + 15px);
+    height: calc((15px + 100px) * 4 + 15px);
+    background: rgba(238, 228, 218,0.7);
+    opacity: 0;
+    z-index: 9999;
+    line-height: 300px;
+    text-align: center;
+    color:#766C64;
+    font-size: 60px;
+    font-weight: bold;
+    left: calc((100vw / 2) - ((15px + 100px) * 4 + 15px) / 2) ;
+    margin-top: 35px;
+    display: block;
+    border-radius: 10px;
+    padding: 7.5px;
+}
+#head button {
+            outline: none;
+    border: none;
+    background-color: rgb(143, 122, 102);
+    border-radius: 4px;
+    color: rgb(249, 246, 242);
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+#head {
+    /* padding:25px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    width: 750px;
+    margin-top: 65px;
+    width: calc((15px + 100px) * 4 + 40px);
+}
+
+.blockNr0 {
+    z-index: -99;
+}
